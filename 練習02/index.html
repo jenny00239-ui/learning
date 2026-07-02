@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justifty-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card {
+            margin: auto;
+            width: 652px;
+            height: 452px;
+            padding: 14px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .title {
+            font-size: 13px;
+            font-weight: 400;
+
+            text-decoration: underline;
+            text-decoration-color: #a87557;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        .news-list {
+            display: grid;
+            /* grid: 210px auto auto; */
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: auto auto auto;
+            gap: 5px;
+            grid-row-gap: 21px;
+        }
+
+
+        .news {
+            width: 210px;
+            /* display: row; */
+        }
+
+        .news img {
+            width: 210px;
+            height: auto;
+            margin-top: 6px;
+        }
+
+        .news p {
+            font-size: 12px;
+            letter-spacing: 1.3px;
+            line-height: 1.5;
+
+            margin-top: 0;
+            margin-left: 6px;
+            margin-right: 8px;
+
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+
+        }
+    </style>
+
+
+
+    <div class="card">
+
+        <h1 class="title">延伸閱讀</h1>
+
+        <div class="news-list">
+
+            <div class="news">
+
+                <img src="photo_01.jpeg" />
+                <p>量販改名「萬家福」、超市叫「樂家康」？ 家樂福：敬請期待</p>
+
+            </div>
+
+            <div class="news">
+
+                <img src="photo_02.webp" />
+                <p>全球機能飲料市場 兵家必爭</p>
+
+            </div>
+
+            <div class="news">
+
+                <img src="photo_03.webp" />
+                <p>晨光開啟早餐新選擇：從少添加出發，回到純粹美味的土司日常</p>
+
+            </div>
+
+            <div class="news">
+
+                <img src="photo_04.webp" />
+                <p>迎向國際新篇章 星享道酒店集團攜手萬豪國際打造中部首家雅雅雅雅雅雅</p>
+
+            </div>
+
+            <div class="news">
+
+                <img src="photo_05.webp" />
+                <p>遊苗栗、帶苗栗 國際食品展「豐味苗栗」進軍海外市場</p>
+
+            </div>
+
+            <div class="news">
+
+                <img src="photo_06.jpeg" />
+                <p>【生活新觀點】補水不只是止渴！家醫科醫師：掌握「清爽雅雅雅雅雅雅</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

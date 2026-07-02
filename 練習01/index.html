@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            /* 水平置中 */
+            align-items: center;
+            /* 垂直置中 */
+            height: 100vh;
+            /* 高度 = 整個視窗 */
+            padding: 0;
+            margin: 0;
+        }
+
+        .card {
+            width: 435px;
+            height: 594px;
+            border-radius: 12px;
+            padding: 14px 26px;
+            margin: auto;
+            background-color: #ffffff;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            text-indent: 0px;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+
+        .header-icon {
+            width: 25px;
+            height: 25px;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .card-item {
+            font-size: 20px;
+            border-top: 1.5px #dddddd solid;
+            padding-top: 29px;
+            padding-bottom: 23px;
+
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1fr 126px;
+
+            align-items: start;
+            /* 上方對齊 */
+
+        }
+
+        .card-item p {
+            min-width: 0;
+            line-height: 2;
+            letter-spacing: 0.5px;
+            margin: 0;
+            align-self: start;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .news-icon {
+            width: 20px;
+            height: auto;
+            display: inline-block;
+            margin-left: 2px;
+            margin-right: 8px;
+
+        }
+
+        .card-item .item-news {
+            max-width: 100%;
+            border-radius: 6px;
+            width: 126px;
+            height: 90px;
+
+            object-fit: cover;
+
+        }
+
+        .bottom-bar {
+            font-size: 16px;
+            color: #bebebe;
+
+            grid-column: 1 / 3;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .bottom-bar img {
+            height: 19px;
+            width: 19px;
+
+            margin-right: 8px;
+            transform: translatey(4px);
+        }
+
+        .news-more {
+            font-size: 18px;
+            font-weight: 500;
+            color: #686868;
+
+            margin-left: auto;
+
+        }
+    </style>
+
+    <div class="card">
+        <h1 class="card-header">
+            <img class="header-icon" src="icon_rain.jpeg">
+            雨彈炸全台
+            <a class="news-more">more</a>
+        </h1>
+
+        <div class="card-item">
+            <!-- grid -->
+            <p>北市內湖大淹水　「咕嚕咕嚕大軍」灌爆蔣萬安臉書：火鍋湯湯湯湯湯湯湯湯湯湯</p><img class="item-news" src="photo_news.jpeg" />
+            <div class="bottom-bar">
+                <span>12分鐘前</span>
+                <span>
+                    <img src="icon_comments.png">1
+                </span>
+            </div>
+        </div>
+        <div class="card-item">
+            <!-- grid -->
+            <p>LIVE／雨勢明晚才會趨緩　氣象署最新說明</p><img class="item-news" src="photo_news.jpeg" />
+            <div class="bottom-bar">
+                <span>17分鐘前</span>
+                <span>
+                    <img src="icon_comments.png">0
+                </span>
+            </div>
+        </div>
+        <div class="card-item">
+            <!-- grid -->
+            <p><img class="news-icon" src="icon_video.png">台南菜寮溪暴漲！淹水1.4m「7人受困」　警消塑膠盒救出扒拉扒拉扒拉</p><img class="item-news"
+                src="photo_news.jpeg" />
+            <div class="bottom-bar">
+                <span>25分鐘前</span>
+                <span>
+                    <img src="icon_comments.png">0
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
