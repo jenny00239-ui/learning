@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            display: flex;
+            color: #ffffff;
+
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .homepage {
+            width: 260px;
+            height: 100vh;
+            padding: 3px 14px;
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: column;
+
+            border-right: 1px solid #1f1f1f;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            font-size: 17.5px;
+            font-weight: 400;
+            text-indent: 4px;
+        }
+
+        .list-all {
+            margin-top: 16px;
+            font-size: 14px;
+            font-weight: 300;
+
+            display: grid;
+            gap: 16px;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        .icon-ash {
+            width: 20px;
+            height: 20px;
+            margin-left: 1px;
+            color: #afafaf;
+            cursor: pointer;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 1px;
+        }
+
+        .menu {
+            margin-top: 6px
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            margin: 22px;
+
+        }
+
+        .list-menu {
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 1px;
+            cursor: pointer;
+        }
+
+        .icon-menu {
+            width: 12px;
+            height: 12px;
+            margin-left: 2px;
+            color: #afafaf;
+            cursor: pointer;
+        }
+
+        .member {
+            margin-top: auto;
+
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            margin-left: 2px;
+
+            padding: 12px 0;
+            box-sizing: border-box;
+        }
+
+
+        .member img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+
+        .member-info {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .member p {
+            margin: 0;
+        }
+
+        .name {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .grade {
+            font-size: 12px;
+            color: #afafaf;
+        }
+
+        .icon-store {
+            margin-left: auto;
+            margin-right: 6.5px;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            color: #afafaf;
+        }
+
+        iframe {
+            flex: 1;
+            min-width: 0;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
+
+    <div class="homepage">
+        <h1 class="logo">ChatGPT<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-ash">
+                <use href="icon-pack.svg#836f7a" fill="currentColor"></use>
+            </svg></h1>
+
+        <div class="list-all">
+
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#3a5c87" fill="currentColor"></use>
+                </svg>
+                新對話
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#ac6d36" fill="currentColor"></use>
+                </svg>
+                搜尋對話
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#056ca7" fill="currentColor"></use>
+                </svg>
+                資料庫
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#974afd" fill="currentColor"></use>
+                </svg>
+                排程
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#c8839f" fill="currentColor"></use>
+                </svg>
+                應用程式
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#b995b8" fill="currentColor"></use>
+                </svg>
+                Codex
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                    <use href="icon-pack.svg#f6d0e2" fill="currentColor"></use>
+                </svg>
+                更多
+            </span>
+        </div>
+
+        <div class="menu">
+            <h2 class="list-menu">專案<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-menu">
+                    <use href="icon-pack.svg#d3876b" fill="currentColor"></use>
+                </svg></h2>
+
+            <h2 class="list-menu">聊天<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-menu">
+                    <use href="icon-pack.svg#d3876b" fill="currentColor"></use>
+                </svg></h2>
+        </div>
+
+        <div class="member"><img src="member.jpg">
+            <span class="member-info">
+                <p class="name">XIAO QING</p>
+                <p class="grade">Plus</p>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon-store">
+                <use href="icon-pack.svg#bb27a0" fill="currentColor"></use>
+            </svg>
+        </div>
+
+    </div>
+
+
+    <iframe id="iframe" title="ChatGPT"
+        src="file:///Users/jishubu/projects/learning/%E7%B7%B4%E7%BF%9204/new-chat.html">
+    </iframe>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        console.log('document ready')
+        $('#iframe').ready(function () {
+            console.log('iframe ready')
+        })
+    });
+
+</script>
+
+
+</html>
