@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Node.js / Nuxt
+node_modules/
+.nuxt/
+.output/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
