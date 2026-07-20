@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            /* 水平置中 */
+            align-items: center;
+            /* 垂直置中 */
+            height: 100vh;
+            /* 高度 = 整個視窗 */
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 30px;
+
+        }
+
+
+        .question {
+            background-color: #212121;
+            border-radius: 9999px;
+
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            width: 750px;
+            height: 35px;
+
+            form {
+                display: flex;
+                align-items: center;
+                flex: 1;
+            }
+
+            input[type="text"] {
+                flex: 1;
+            }
+
+        }
+
+
+        .input-question-sort {
+            width: 20px;
+            height: 20px;
+            color: #ffffff;
+            margin-left: 7px;
+            margin-right: 14px;
+        }
+
+        .input-question-voice {
+            width: 20px;
+            height: 20px;
+            margin-right: 16px;
+            color: #ffffff;
+        }
+
+        .input-question-enter {
+            border-radius: 50%;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 4px;
+            width: 26px;
+            height: 26px;
+        }
+
+        input {
+            background-color: transparent;
+            font-size: 16px;
+            border: none;
+
+        }
+
+        select {
+            background-color: transparent;
+            color: #ffffff;
+            border-color: transparent;
+            margin-right: 20px;
+
+            font-size: 16px;
+            width: 58px;
+        }
+
+        .search-option li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            color: #afafaf;
+            font-size: 16px;
+            padding-top: 24px;
+            margin-left: -21px;
+        }
+
+        .input-search {
+            width: 20px;
+            height: 20px;
+            margin-right: 16px;
+            color: #afafaf;
+        }
+    </style>
+
+    <div class="new-chat">
+        <h1>我們該從哪裡開始？</h1>
+
+        <div class="question">
+
+            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="input-question-sort">
+                <use href="icon-pack.svg#decc1a" fill="currentColor"></use>
+            </svg>
+
+            <form class="question-input">
+
+                <input type="text" placeholder="詢問 ChatGPT">
+
+                <select>
+                    <optgroup label="智慧">
+                        <option value="immediate">即時</option>
+                        <option value="intermediate">中等</option>
+                        <option value="advanced">高</option>
+
+                        <option value="advanced">GPT-5.5</option>
+                        <option value="GPT-5.5">GPT-5.5</option>
+                        <option value="GPT-5.4">GPT-5.4</option>
+                        <option value="GPT-5.3">GPT-5.3</option>
+                        <option value="O3">O3</option>
+                    </optgroup>
+
+                </select>
+
+                <!-- <input type="submit" /> -->
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="input-question-voice">
+                    <use href="icon-pack.svg#33d595" fill="currentColor"></use>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="input-question-enter">
+                    <use href="icon-pack.svg#28eb3d" fill="currentColor"></use>
+                </svg>
+
+            </form>
+
+        </div>
+
+
+        <ol class="search-option">
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="input-search">
+                    <use href="icon-pack.svg#d7281f" fill="currentColor"></use>
+                </svg>
+                建立圖像
+            </li>
+
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="input-search">
+                    <use href="icon-pack.svg#6d87e1" fill="currentColor"></use>
+                </svg>編寫或編輯
+            </li>
+
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="input-search">
+                    <use href="icon-pack.svg#6b0d8c" fill="currentColor"></use>
+                </svg>
+                查資料
+            </li>
+
+        </ol>
+
+
+    </div>
+
+
+
+
+</body>
+
+
+</html>

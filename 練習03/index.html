@@ -19,8 +19,12 @@
         body {
             background-color: #000000;
             margin: 0;
-
+            display: flex;
             color: #ffffff;
+
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .homepage {
@@ -145,10 +149,18 @@
         .icon-store {
             margin-left: auto;
             margin-right: 6.5px;
-            /* cursor: pointer; */
+            cursor: pointer;
             width: 20px;
             height: 20px;
             color: #afafaf;
+        }
+
+        iframe {
+            flex: 1;
+            min-width: 0;
+            height: 100vh;
+            border: none;
+            display: block;
         }
     </style>
 
@@ -159,27 +171,48 @@
 
         <div class="list-all">
 
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#3a5c87" fill="currentColor"></use>
-                </svg>新對話</span>
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                </svg>
+                新對話
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#ac6d36" fill="currentColor"></use>
-                </svg>搜尋對話</span>
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                </svg>
+                搜尋對話
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#056ca7" fill="currentColor"></use>
-                </svg>資料庫</span>
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                </svg>
+                資料庫
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#974afd" fill="currentColor"></use>
-                </svg>排程</span>
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                </svg>
+                排程
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#c8839f" fill="currentColor"></use>
-                </svg>應用程式</span>
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                </svg>
+                應用程式
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#b995b8" fill="currentColor"></use>
-                </svg>Codex</span>
-            <span class="list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
+                </svg>
+                Codex
+            </span>
+            <span class="list">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon">
                     <use href="icon-pack.svg#f6d0e2" fill="currentColor"></use>
-                </svg>更多</span>
+                </svg>
+                更多
+            </span>
         </div>
 
         <div class="menu">
@@ -202,14 +235,11 @@
             </svg>
         </div>
 
-
-
-
-
-
     </div>
 
 
+    <iframe title="ChatGPT" src="file:///Users/jishubu/projects/learning/%E7%B7%B4%E7%BF%9203/new-chat.html">
+    </iframe>
 
 </body>
 
