@@ -1,0 +1,85 @@
+.article-page h1 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  overflow-wrap: break-word;
+}
+
+.h1-time {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: -30px;
+  color: #777780;
+  font-size: 12.5px;
+}
+
+.h1-time p + p::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background-color: #d1d1d5;
+}
+
+.tag {
+  display: flex;
+  gap: 10px;
+  margin-top: -16px;
+}
+
+.tag p {
+  padding: 3px 7px;
+  color: #c5ce66;
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 9999px;
+}
+
+.article-page figure {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.article-page figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 600px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.article-page figcaption {
+  margin: 0 auto;
+  color: #52525b;
+  font-size: 16px;
+}
+
+.new-art p {
+  overflow-wrap: break-word;
+  font-size: 20px;
+  line-height: 1.9;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.article-page h2 {
+  padding-top: 80px;
+  padding-bottom: 16px;
+  color: #2969b0;
+  font-size: 20px;
+}
+
+.illustrative {
+  max-height: 600px;
+}
+
+.author {
+  display: flex;
+  margin: 50px auto;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
